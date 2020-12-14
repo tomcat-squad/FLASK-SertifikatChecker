@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Sertifikat Checker Tomcat Squad">
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<link rel="shortcut icon" href="https://elearning.tomcatsquad.web.id/static/assets/img/tomcatlogo.png" type="image/x-icon">
+	<script src="https://kit.fontawesome.com/bc6d3d8101.js" crossorigin="anonymous"></script>
+	<title>Ajax Tomcat Squad</title>
+</head>
+
+<body>
+	<div class="container">
+		{% for row in data %}
+		<p style="margin-bottom: -5px;"> Nama : {{row.1}}</p>
+		<p style="margin-bottom: -5px;">Genre : {{row.2}}</p>
+		<p style="margin-bottom: -5px;">Tanggal : {{row.3}}</p>
+		<p>Status : <i class="fas fa-check-circle" style="color: #34d61f;"></i></p>
+		{%endfor%}
+	</div>
+</body>
+</html>
