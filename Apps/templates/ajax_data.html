@@ -11,18 +11,40 @@
 	<link rel="shortcut icon" href="https://elearning.tomcatsquad.web.id/static/assets/img/tomcatlogo.png" type="image/x-icon">
 	<script src="https://kit.fontawesome.com/bc6d3d8101.js" crossorigin="anonymous"></script>
 	<title>Ajax Tomcat Squad</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Titillium+Web:wght@300&display=swap');
+		h3{
+			font-family: 'Poppins', sans-serif;
+			font-size: 30pt;
+		}
+		a{
+			font-family: 'Asap', sans-serif;
+			color: #ffffff;
+		}
+		h4{
+			font-family: 'Lato', sans-serif;
+			font-size: 15pt;
+		}
+		p{
+			font-family: 'Titillium Web', sans-serif;
+		}
+		a:link{
+			text-decoration: none;
+		}
+</style>
 </head>
 
-<body>
-	<div class="container" style="width: 360px;">
-		<div class="card" style="width: 300px;">
-			<div class="card-body">		
+<body style="background-color: #1D1C1E; color: #ffffff;">
+	<div class="container">
+		<div class="card text-light" style="width: 290px; background-color: #1D1C1E; color: #ffffff; margin: auto;">
+			<div class="card-body border" style="margin-bottom: 30px;">		
 				{% for row in data %}
-				<img class="card-img-top" src="/static/img/certificate.svg" alt="Icon">
-				<p style="margin-bottom: -5px;"> Nama : {{row.1}}</p>
-				<p style="margin-bottom: -5px;">Genre : {{row.2}}</p>
-				<p style="margin-bottom: -5px;">Tanggal : {{row.3}}</p>
-				<p>Status : <i class="fas fa-check-circle" style="color: #34d61f;"></i></p>
+				<p><i class="fas fa-check-circle" style="color: #34d61f;"></i></p>
+				<p style="margin-bottom: -5px; margin-top: -10px;"><i class="fas fa-id-card"></i> : {{row.1}}</p>
+				<p style="margin-bottom: -5px;"><i class="fas fa-info-circle"></i> : {{row.2}}</p>
+				<p style="margin-bottom: -5px;"><i class="fas fa-calendar-alt"></i> : {{row.3}}</p>
 				{%endfor%}
 			</div>
 		</div>
