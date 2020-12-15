@@ -14,13 +14,18 @@
 </head>
 
 <body>
-	<div class="container">
-		{% for row in data %}
-		<p style="margin-bottom: -5px;"> Nama : {{row.1}}</p>
-		<p style="margin-bottom: -5px;">Genre : {{row.2}}</p>
-		<p style="margin-bottom: -5px;">Tanggal : {{row.3}}</p>
-		<p>Status : <i class="fas fa-check-circle" style="color: #34d61f;"></i></p>
-		{%endfor%}
+	<div class="container" style="width: 360px;">
+		<div class="card" style="width: 300px;">
+			<div class="card-body">		
+				{% for row in data %}
+				<img class="card-img-top" src="/static/img/certificate.svg" alt="Icon">
+				<p style="margin-bottom: -5px;"> Nama : {{row.1}}</p>
+				<p style="margin-bottom: -5px;">Genre : {{row.2}}</p>
+				<p style="margin-bottom: -5px;">Tanggal : {{row.3}}</p>
+				<p>Status : <i class="fas fa-check-circle" style="color: #34d61f;"></i></p>
+				{%endfor%}
+			</div>
+		</div>
 	</div>
 </body>
 </html>
