@@ -12,17 +12,108 @@
 	<script src="https://kit.fontawesome.com/bc6d3d8101.js" crossorigin="anonymous"></script>
 	<title>AJAX | SERTIFIKAT TOMCAT SQUAD</title>
 </head>
+<style>
+	.container {
+		width: 1000px ;
+		justify-content: space-between ;
+		padding: 10px ;
+		margin-top: 30px ;
+	}
+
+	.kiri {
+		margin-left: -50px ;
+	}
+
+	.kiri-2 {
+		margin-left : -100px ;
+	}
+
+	.kanan {
+		margin-left : 30px  ;
+	}
+
+
+	@media only screen and (max-width : 800px ){
+		.container {
+			width: 330px ;
+			display: flex ;
+			justify-content: center ;
+		}
+
+		.container p {
+			font-size: 13px ;
+		}
+
+		.container h5 {
+			font-size: 15px ;
+		}
+
+		.kiri {
+		margin-left: 0 ;
+		}
+
+		.kiri-2 {
+			margin-left: 0 ;
+		}
+
+		.kanan {
+			margin-left : 0  ;
+		}
+
+	}
+</style>
 
 <body style="background-color: #1D1C1E; color: #ffffff;">
-	<div class="container">
-		<div class="card text-light" style="width: 290px; background-color: #1D1C1E; color: #ffffff; margin: auto;">
+	<div class="container justify-content-between" style="border : 1px solid #9F9F9F ; border-radius: 10px ; ">
+		<div class="row">
+			<div class="col kanan">
+				<p><i class="fas fa-check-circle" style="color: #2196F3; font-size : 45px ; margin-top: 10px ; "></i></p>
+			</div>
+			<div class="col kiri-2">
+				<div class="col">
+					<h5>Nama : </h5>
+				</div>
+				<div class="col">
+					<p>Tomcat squad</p>
+				</div>
+			</div>
+
+			<div class="col kiri">
+				<div class="col">
+					<h5>Acara : </h5>
+				</div>
+				<div class="col">
+					<p>Turnamen Mobile legends</p>
+				</div>
+			</div>
+
+			<div class="col kanan">
+				<div class="col">
+					<h5>Nomer ID : </h5>
+				</div>
+				<div class="col">
+					<p>20202101223</p>
+				</div>
+			</div>
+
+			<div class="col-md-2 kiri ">
+				<div class="col">
+					<h5>Tanggal : </h5>
+				</div>
+				<div class="col">
+					<p>2020-21-01</p>
+				</div>
+			</div>
+
+		</div>
+		<!-- <div class="card text-light" style="width: 290px; background-color: #1D1C1E; color: #ffffff; margin: auto;">
 			<div class="card-body border" style="margin-bottom: 30px;">		
 				<p><i class="fas fa-check-circle" style="color: #34d61f;"></i></p>
 				<p style="margin-bottom: -5px; margin-top: -10px;">Tomcat Squad</p>
 				<p style="margin-bottom: -5px;">Mobile Legend</p>
 				<p style="margin-bottom: -5px;">2020-12-12</p>
 			</div>
-		</div>
+		</div> -->
 	</div>
 </body>
 </html>
